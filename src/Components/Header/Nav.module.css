@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@700&display=swap');
+
+.navigation {
+    margin: 10px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 22px;
+}
+
+.navigation span {
+    margin-top: 20px;
+}
+
+.navigation > span > a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.logo {
+    color: #f8e800;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+.navList {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+.navList li a {
+    text-decoration: none;
+    color: #ffffff;
+    margin: 0 10px;
+    padding: 5px;
+    transition: 0.5s;
+}
+
+.navList li:hover a {
+    font-size:25px;
+    color: #f8e800;
+    border-bottom: 2px solid #f8e800;
+}
+
+.barIcon {
+    float: right;
+    background-color: #ffffff00;
+    border: none;
+    cursor: pointer;
+    display: none;
+}
+
+.barIcon:focus {
+    outline: none;
+}
+
+.barIcon div {
+    width: 25px;
+    height: 3px;
+    margin: 5px;
+    background-color: #ffffff;
+}
+
+
+@media screen and (max-width: 768px) {
+    .barIcon {
+        display: block;
+        z-index: 2;
+    }
+
+    .navigation span {
+        z-index: 2;
+    }
+
+    .navList {
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        top: 0;
+        left: -120%;
+        background-color: #1616499a;
+        transition: all 0.5s;
+        z-index: 1;
+    }
+
+    .navList li {
+        margin: 30px;
+        line-height: 30px;
+    }   
+}
+
+@media screen and (max-width: 400px) {
+    .navigation {
+        margin: 5px;
+        padding: 5px;
+    }
+}

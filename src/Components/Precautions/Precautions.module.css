@@ -1,0 +1,121 @@
+.Precaution {
+    display: flex;
+    flex-direction: column;
+    max-width: 80%;
+    min-height: 100vh;
+    margin: 50px 10%;
+    background-color: #394DCB;
+    border: 2px solid #5b6ace;
+    border-radius: 10px;
+    padding: 50px 100px;
+}
+
+.Precaution h1 {
+    font-family: 'Gayathri', sans-serif;
+    text-transform: capitalize;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.root {
+    flex-grow: 1;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
+}
+
+.content h6 {
+    font-family: 'Gayathri', sans-serif;
+    font-size: larger;
+    letter-spacing: 2px;
+    min-width: 250px;
+}
+
+.content img {
+    width: 180px;
+}
+
+
+@media screen and (max-width: 707px) and (min-width: 620px) {
+    .Precaution h1 {
+        font-family: 'Gayathri', sans-serif;
+        font-size: 25px;
+        text-transform: capitalize;
+        font-weight: 800;
+        letter-spacing: 2px;
+    }
+
+    .content h6 {
+        font-family: 'Gayathri', sans-serif;
+        font-size: 15px;
+        letter-spacing: 2px;
+    }
+
+    .content img {
+        width: 130px;
+    }
+}
+
+@media screen and (max-width: 619px) and (min-width: 500px)  {
+    .Precaution {
+        align-items: center;
+        padding: 20px;
+    }
+    .Precaution h1 {
+        font-family: 'Gayathri', sans-serif;
+        font-size: 20px;
+        text-transform: capitalize;
+        font-weight: 800;
+        letter-spacing: 1px;
+    }
+
+    .content h6 {
+        font-family: 'Gayathri', sans-serif;
+        font-size: 14px;
+        letter-spacing: 1px;
+    }
+
+    .content img {
+        width: 130px;
+    }
+}
+
+
+@media screen and (max-width: 499px)  {
+    
+    .Precaution {
+        align-items: center;
+        padding: 20px 0px;
+    }
+
+    .Precaution h1 {
+        font-family: 'Gayathri', sans-serif;
+        font-size: 18px;
+        text-transform: capitalize;
+        font-weight: 800;
+        letter-spacing: 1px;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .content h6 {
+        font-family: 'Gayathri', sans-serif;
+        font-weight: 400;
+        font-size: 15px;
+        letter-spacing: 1px;
+    }
+
+    .content img {
+        width: 120px;
+    }
+}
